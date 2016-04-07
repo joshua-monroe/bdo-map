@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Interop;
 
 namespace BDO_Map_Overlay
 {
@@ -22,6 +23,16 @@ namespace BDO_Map_Overlay
         public Overlay()
         {
             InitializeComponent();
+
+        }
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+
+            // Get this window's handle
+            IntPtr hwnd = new WindowInteropHelper(this).Handle;
+
+            WindowHelper.makeTransparent(hwnd);
         }
     }
 }

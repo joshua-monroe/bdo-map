@@ -8,10 +8,10 @@
         Title="Overlay" Height="350" Width="525"
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
-        AllowsTransparency="True">
+        AllowsTransparency="True" Topmost="True">
     <Window.Background>
         <SolidColorBrush Opacity="0.0" Color="White"/>
     </Window.Background>
-    <Canvas Margin="0,0,0,0" Background="White" Opacity="0.5">
+    <Canvas Margin="0,0,0,0" Background="White" Opacity="0.15">
     </Canvas>
 </Window>
