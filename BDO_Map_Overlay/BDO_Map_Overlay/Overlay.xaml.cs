@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BDO_Map_Overlay
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Overlay.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Overlay : Window
     {
-
-        public MainWindow()
+        public Overlay()
         {
             InitializeComponent();
-        }
-
-        private void Start_Map_Click(object sender, RoutedEventArgs e)
-        {
-            Overlay overlay = new Overlay();
-            overlay.Show();
         }
     }
 }

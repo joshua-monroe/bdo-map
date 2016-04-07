@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BDO_Map_Overlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="BDO Map" Height="400" Width="640">
+    <DockPanel  Width="Auto" Height="Auto" LastChildFill="True">
+        <!--Top Menu Area-->
+        <Menu Width="Auto" Height="20" 
+            Background="Orange"
+            DockPanel.Dock="Top">
+
+            <!-- File Menu -->
+            <MenuItem Header="Map">
+                <MenuItem Header="Start" Click="Start_Map_Click"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Load"/>
+                <Separator/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <!-- Edit Menu -->
+            <MenuItem Header="Options">
+                <MenuItem Header="Resolution"/>
+                <MenuItem Header="Hotkeys"/>
+            </MenuItem>
+            <!-- About Menu -->
+            <MenuItem Header="Help">
+                <MenuItem Header="About"/>
+            </MenuItem>
+        </Menu>
+        <Canvas Margin="0,0,0,0" Background="White" Opacity="0.0">
+        </Canvas>
+
+    </DockPanel>
+
 </Window>
