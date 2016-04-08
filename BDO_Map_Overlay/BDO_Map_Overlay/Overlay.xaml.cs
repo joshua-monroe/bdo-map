@@ -20,11 +20,22 @@ namespace BDO_Map_Overlay
     /// </summary>
     public partial class Overlay : Window
     {
-        public Overlay()
+        private static Overlay instance = null;
+
+        private Overlay()
         {
             InitializeComponent();
-
         }
+
+        public static Overlay getInstance()
+        {
+            if(instance == null)
+            {
+                instance = new Overlay();
+            }
+            return instance;
+        }
+
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);

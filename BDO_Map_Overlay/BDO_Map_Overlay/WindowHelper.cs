@@ -8,10 +8,7 @@ using System.Runtime.InteropServices;
 namespace BDO_Map_Overlay
 {
     class WindowHelper
-    {
-
-
-
+    { 
         //Rest of this code in located in the class itself
         public const int WS_EX_TRANSPARENT = 0x00000020;
         public const int GWL_EXSTYLE = (-20);
